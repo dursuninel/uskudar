@@ -1,3 +1,183 @@
+$("header").html(`<div class="container">
+        <div class="header-flex">
+          <div class="header-logo">
+            <a href="/">
+              <img src="images/logo.png" alt="Üsküdar" />
+            </a>
+          </div>
+          <div class="header-nav">
+            <div class="header-burger inner-check">
+              <div class="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="navigation-list">
+              <li>
+                <a href="/" title="Anasayfa">Anasayfa </a>
+              </li>
+              <li>
+                <a href="/hakkimizda.html">Hakkımızda</a>
+              </li>
+              <li>
+                <a href="/kuluplar.html" title="Kulüpler">Kulüpler </a>
+              </li>
+              <li>
+                <a href="/duyurular.html" title="Duyurular">Duyurular </a>
+              </li>
+              <li>
+                <a href="/haberler.html" title="Haberler">Haberler</a>
+              </li>
+              <li>
+                <a href="/mac-sonuclari.html" title="Maç Sonuçları"
+                  >Maç Sonuçları
+                </a>
+              </li>
+              <li class="mob_box">
+                <a href="/iletisim.html" title="İletişim">İletişim </a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <a href="/iletisim.html" title="İletişim" class="btn_style">
+              İletişim
+            </a>
+          </div>
+          <div class="header-burger out-check">
+            <div class="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="overlay-header"></div>
+        </div>
+      </div>`);
+
+$("footer").html(`
+        <div class="footer_contact">
+        <div class="container">
+          <div class="footer_contact_flex">
+            <h2>Bizimle İletişime Geçin!</h2>
+            <a href="tel:0123456789" class="btn_style"> Hemen Arayın </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-flex">
+            <div>
+              <p class="title">Bağlantılar</p>
+              <ul>
+                <li>
+                  <a href="/">Anasayfa</a>
+                </li>
+                <li>
+                  <a href="/hakkimizda.html" title="Hakkımızda">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="/kuluplar.html" title="Kulüpler">Kulüpler</a>
+                </li>
+                <li>
+                  <a href="/duyurular.html" title="Duyurular">Duyurular</a>
+                </li>
+                <li>
+                  <a href="/haberler.html" title="Haberler">Haberler</a>
+                </li>
+                <li>
+                  <a href="/mac-sonuclari.html" title="Maç Sonuçları"
+                    >Maç Sonuçları</a
+                  >
+                </li>
+                <li>
+                  <a href="/iletisim.html" title="İletişim">İletişim</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="title">Duyurular</p>
+              <ul>
+                <li>
+                  <a href="javascript:;">Duyuru Başlığı</a>
+                </li>
+                <li>
+                  <a href="javascript:;">Duyuru Başlığı</a>
+                </li>
+                <li>
+                  <a href="javascript:;">Duyuru Başlığı</a>
+                </li>
+                <li>
+                  <a href="javascript:;">Duyuru Başlığı</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="title">Haberler</p>
+              <ul>
+                <li>
+                  <a href="javascript:;">Haber Başlığı</a>
+                </li>
+                <li>
+                  <a href="javascript:;">Haber Başlığı</a>
+                </li>
+                <li>
+                  <a href="javascript:;">Haber Başlığı</a>
+                </li>
+                <li>
+                  <a href="javascript:;">Haber Başlığı</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="title">Sosyal Medya</p>
+              <ul class="social_media">
+                <li>
+                  <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="title">İletişim</p>
+              <ul>
+                <li>
+                  <a href="/" target="_blank">
+                    Lorem ıpsum sok. No: 1345 Cad. Lorem Ipsum Mıgır
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:0 123 456 789">0 123 456 789</a>
+                </li>
+                <li>
+                  <a href="mailto:info@uskudarkulupler.com"
+                    >info@uskudarkulupler.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-main">
+        <div class="container">
+          <div class="copyright-flex">
+            <p>© 2024 Üsküdar Kulüpler Birliği, Tüm Hakları Saklıdır.</p>
+          </div>
+        </div>
+      </div>
+      `);
+
 $(".header-logo img").on("dragstart", function (event) {
   event.preventDefault();
 });
@@ -44,6 +224,12 @@ var swiper = new Swiper(".clubs_slide", {
   pagination: {
     el: ".swiper-pagination",
   },
+});
+
+var swiper = new Swiper(".announcements_slide", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
 });
 
 // Filtreleme işlemi için tarih hesaplaması
